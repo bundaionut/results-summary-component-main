@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(0, 0%, 100%)
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #fff;
+    box-shadow: 2px 2px 15px #ccc;
+    border-radius: 1.25rem;
+}
+.result{
+    position: relative;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 20%,hsl(241, 81%, 54%) 100%);
+    text-align: center;
+    border-radius: 1.25rem;
+}
+.cercle{
+    color: #fff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: linear-gradient(0deg, hsl(252, 100%, 67%) 5%,hsl(241, 81%, 54%) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title h3{
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+    margin: 2rem 0rem;
+}
+.cercle h1{
+    font-size: 3.5rem;
+}
+.cercle h6{
+    color: hsl(241, 100%, 89%);
+    font-size: 0.9rem;
+}
+.result h2{
+    color: #fff;
+    margin: 2rem 0;
+}
+.result p{
+    color: hsl(241, 100%, 89%);
+    margin: 2rem 0;
+    padding: 0rem 2.5rem;
+    max-width: 300px;
+}
+.summary{
+    padding: 0rem 2rem;
+}
+.summary h3{
+    margin: 2rem 0rem;
+}
+.reaction,
+.memory,
+.verbal,
+.visual
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.7rem 0;
+}
+.reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.verbal{
+    color:hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.nest{
+    display: flex;
+}
+.score span{
+    color: #000;
+    font-weight: 700;
+}
+.score {
+    color:hsla(224, 30%, 27%, 0.3);
+    font-weight: 900;
+}
+button {
+    width: 100%;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 1.7rem;
+    border: 0;
+    background-color: hsl(224, 30%, 27%);
+    margin-top: 1.25rem;
+}
+@media only screen and (max-width: 768px){
+    main{
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    section{
+        grid-template-columns: 100%;
+        border-radius: 0;
+    }
+    .summary{
+        padding: 2rem;
+    }
+}
